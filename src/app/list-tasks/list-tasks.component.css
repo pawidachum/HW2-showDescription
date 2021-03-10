@@ -1,0 +1,13 @@
+.listTasks {
+    border-style: solid;
+    height: 2em;
+    border-collapse: collapse;
+}
+.pressDel {
+    float: right;
+    height: 2em;
+}
+.selected {
+    background: cornflowerblue;
+    
+}

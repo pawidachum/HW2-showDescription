@@ -1,0 +1,24 @@
+<div class="todolist">
+<h2>ToDolist Component</h2> 
+<div >
+    <app-list-tasks *ngFor="let task of tasks; index as i" [taskObj] ="task" (OnDeleted)="deleteTask($event)" (OnSelected)="selectedTask($event)"></app-list-tasks>
+</div>
+
+<div class="add-tk">
+<b>Add task</b> 
+<p class="name">Name: <input type="text" [(ngModel)]="taskName"></p>
+<p class="desc">Description: <input type="text" [(ngModel)]="taskDescription"></p>
+<button (click)="addTask()">Add</button>
+</div>
+
+<div class="showDes" *ngIf="taskSelected">
+<h3>Task : <span>{{ taskSelected.name }}</span></h3>
+<b>Description :</b> <span>{{ taskSelected.description }}</span>
+</div>
+
+</div>
+
+
+
+
+

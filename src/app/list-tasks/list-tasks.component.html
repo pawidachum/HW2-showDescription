@@ -1,0 +1,5 @@
+
+<div class="listTasks" (click)="selected()" [class.selected] = "isSelected">
+    {{taskObj.id}}:{{ taskObj.name }} <button class="pressDel" (click)="delete()">delete</button>
+</div>
+
